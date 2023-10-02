@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- <ol>
+				<li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+				<li><a href="https://www.google.com/">Google</a></li>
+			</ol> -->
+
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="./videosAudios.html">VIDEOS Y AUDIO</a></li>
+        <li><a href="../images/gatito-lindo.jpg" target="_blank">FORMULARIO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Bienvenido al formulario</h1>
+
+  <form action="">
+    <label for="nombre">
+      Ingrese su nombre
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre" minlength="2" maxlength="25" required>
+    </label>
+
+    <br>
+
+    <label for="correo">
+      Ingrese su correo
+      <input type="email" name="correo" id="correo" required>
+    </label>
+
+    <br>
+
+    <label for="contrasenia">
+      Ingrese su contraseña
+      <input type="password" name="contrasenia" id="contrasenia" required>
+    </label>
+
+    <br>
+
+    <label for="dni">
+      Ingrese su DNI
+      <input type="number" name="dni" id="dni">
+    </label>
+
+    <br>
+
+    <label for="fechaNacimiento">
+      Ingrese su fecha de nacimiento
+      <input type="date" name="fechaNacimiento" id="fechaNacimiento" min="2023-08-13">
+    </label>
+
+    <br>
+
+
+    <label for="lenguaje">
+      Lenguaje
+      <select name="lenguaje" id="lenguaje" required>
+        <option value="hola" selected>Hola</option>
+        <option value="Javascript">Javascript</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+      </select>
+    </label>
+
+    <br>
+
+    <label>
+      Indique su Genero
+      <br>
+      <input type="radio" name="genero" id="hombre" value="Hombre"> Hombre
+      <br>
+      <input type="radio" name="genero" id="mujer" value="Mujer"> Mujer
+      <br>
+      <input type="radio" name="genero" id="noBinario" value="No binario"> No binario
+    </label>
+
+    <br>
+
+
+    <p>Terminos y condiciones</p>
+    <textarea name="" id="" cols="30" rows="20" readonly>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione voluptatibus molestias odit, culpa maiores facere, at quod eligendi, molestiae hic aperiam eaque ea officia asperiores nulla explicabo perferendis nam laudantium est. Quaerat modi iure eum error ut inventore. Ducimus harum recusandae quibusdam tempore vero officiis sapiente iure. Doloribus officia voluptatibus qui maxime provident tempora ea cum similique? Ipsam debitis quidem explicabo cum voluptas hic sint dolorem et aliquid dicta dignissimos voluptatibus iure beatae delectus placeat itaque alias, non est numquam vero. Velit dicta optio qui omnis, eum corporis laudantium repellendus! Incidunt natus, modi, alias illum doloremque fugit accusamus labore esse sint nobis itaque soluta facere excepturi, dolore saepe provident. Molestiae totam corrupti commodi! Voluptas dicta porro, illum nobis suscipit optio ab temporibus, autem consequuntur praesentium quaerat omnis, cum eos assumenda in reiciendis itaque sed deserunt earum delectus maiores dolores soluta doloremque. Fugit itaque, soluta excepturi illo odit illum in iure libero voluptas delectus. Reiciendis inventore explicabo qui debitis soluta aliquid laborum fuga magni modi dicta rerum, blanditiis ad reprehenderit sit est facere nam. Molestiae numquam cumque sapiente nulla delectus exercitationem, alias ea libero officia, quaerat, eos quas repellat asperiores ducimus iusto porro illo commodi dolorem non distinctio? Architecto, eos.
+    </textarea>
+
+    <br>
+
+    <label>
+      <input type="checkbox" required>
+      <b>Acepto los términos y condiciones</b>
+    </label>
+
+    <br>
+
+    <label>
+      Elija un color
+      <input type="color">
+    </label>
+
+    <br>
+
+    <input type="range" min="" step="20">
+
+    <br>
+
+    <label for="">
+      Suba su CV
+      <input type="file">
+    </label>
+
+    <br>
+
+    <!-- <input type="submit" value="Enviar formulario"> -->
+    <button type="submit">Enviar Formulario</button>
+
+  </form>
+</body>
+
+</html>

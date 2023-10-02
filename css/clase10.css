@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+/* Variable global porque esta definida en :root */
+:root {
+  --rojo: #f96b60;
+  --verde: #00ff00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-mobile {
+  display: none;
+  background-color: var(--verde);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* height: 200px; */
+  /* flex-flow: column wrap; */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.container div {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url('../images/funko_naruto_1.jpg'); */
+  background-color: var(--verde);
+  background-size: contain;
+  border-radius: 30px;
+  box-shadow: 8px 3px 18px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-out;
+  transition-property: transform;
+}
+
+.container div:hover {
+  transform: translate(0, -20px) scale(1.1) rotate(10deg);
+  filter: contrast(150%) grayscale(50%) drop-shadow(30px 20px 10px black);
+  transition: all 2000ms ease-in-out;
+  transition-property: all;
+}
+
+header {
+  background-color: antiquewhite;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  height: 60px;
+  /* flex-direction: row-reverse; */
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar ul li a:hover {
+  color: rgb(10, 187, 10);
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: var(--rojo);
+  }
+
+  .navbar ul {
+    display: block;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1000px) {
+  body {
+    background-color: var(--rojo);
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-color: gray;
+  }
+}

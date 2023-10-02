@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: red; 
+  font-size: 28px;
+}
+
+h1 {
+  color: black !important;
+  border: 1px solid red;
+}
+
+#parrafo-1 {
+  background-color: aqua;
+}
+
+.fondito1 {
+  background-color: chocolate;
+}
+
+.bold-letter {
+  background-color: blue;
+}
+
+h2, .fondito1, .bold-letter {
+  font-style: italic;
+}
+
+nav ul li .negro  {
+  text-decoration: none;
+  color: black;
+}
+
+.all-styles {
+  text-decoration: underline;
+  font-style: normal;
+  font-size: 30px;
+}
